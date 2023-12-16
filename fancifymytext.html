@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fancify Shamcify</title>
+    <!-- link to your script file here -->
+    <script src="fancifymytext.js"></script>
+  </head>
+
+  <body>
+    <h1>Fancify my Text</h1>
+    <!-- super cool,fancy image -->
+    <img
+      src="https://static-00.iconduck.com/assets.00/emoji-sunglasses-icon-512x512-a0bdkht9.png"
+      alt="shades-emoji"
+      height="100"
+      width="100" />
+    <br />
+    <!-- Your UI controls go here -->
+    <!-- field set #1 -->
+    <fieldset>
+      <legend>Text</legend>
+      <textarea id="myText" rows="4" cols="30"></textarea>
+    </fieldset>
+    <!-- field set #2 -->
+    <fieldset>
+      <legend>Fancify</legend>
+      <button onclick="getBigger()">Bigger!</button>
+	  <button onclick="getMoo()">Moo!</button><br />
+      <input type="radio" id="fancyShmancy" name="fancy" value="fancyShmancy" onchange="changeFancytext()" />
+      <label for="fancyShmancy">FancyShmancy</label><br />
+      <input type="radio" id="BoringBetty" name="boring" value="BoringBetty" onchange="changeBoringtext()" />
+      <label for="BoringBetty">BoringBetty</label>
+    </fieldset>
+  </body>
+</html>
